@@ -14,7 +14,7 @@
 
 @implementation ViewControllerB
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskLandscape;
 }
 
@@ -22,8 +22,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-//- (BOOL)shouldAutorotate {
-//    return NO;
-//}
+- (void)viewDidLoad {
+    [NSThread sleepForTimeInterval:3.0f];
+}
+
 
 @end
